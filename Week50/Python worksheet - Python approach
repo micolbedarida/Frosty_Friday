@@ -1,0 +1,8 @@
+import snowflake.snowpark as snowpark
+from snowflake.snowpark.functions import col
+
+def main(session: snowpark.Session): 
+    df = session.table("F_F_50")
+    df = df[df.Last_name == 'Deery']
+    df.show()
+    return df
