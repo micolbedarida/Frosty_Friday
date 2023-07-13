@@ -1,0 +1,3 @@
+select *
+from FROSTY_FRIDAY.WEEK50.F_F_50
+Where last_name='Deery'
